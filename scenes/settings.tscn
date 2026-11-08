@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dc5s0805rhwcf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_36l1p"]
+bg_color = Color(0.6156863, 0.7137255, 0.8980392, 1)
+expand_margin_left = 100.0
+expand_margin_top = 150.0
+expand_margin_right = 100.0
+expand_margin_bottom = 150.0
+
+[node name="Settings" type="Node2D" unique_id=2089508872]
+
+[node name="Panel" type="Panel" parent="." unique_id=1757648889]
+offset_left = 102.0
+offset_top = 148.0
+offset_right = 1050.0
+offset_bottom = 486.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_36l1p")

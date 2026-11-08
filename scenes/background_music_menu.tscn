@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://6efy5v0ugaai"]
+
+[ext_resource type="AudioStream" uid="uid://b6lt65bhq8gs4" path="res://music/fluffing_a_duck.mp3" id="1_ak6jf"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" unique_id=1673392849]
+stream = ExtResource("1_ak6jf")
+autoplay = true

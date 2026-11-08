@@ -4,6 +4,7 @@
 [ext_resource type="Theme" uid="uid://dgxv0ec8qlwkp" path="res://default.tres" id="2_brbbq"]
 [ext_resource type="Texture2D" uid="uid://cdbvhj4xo7701" path="res://kenney_ui-pack/PNG/Blue/Default/button_rectangle_depth_flat.png" id="3_8n18e"]
 [ext_resource type="Script" uid="uid://cktl21r11wa6o" path="res://scripts/button_script.gd" id="3_brbbq"]
+[ext_resource type="AudioStream" uid="uid://b6lt65bhq8gs4" path="res://music/fluffing_a_duck.mp3" id="5_tjwpk"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_01bab"]
 texture = ExtResource("3_8n18e")
@@ -74,7 +75,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.61695325, 0.7153116, 0.89769685, 1)
 
-[node name="CenterContainer" type="CenterContainer" parent="." unique_id=946410179]
+[node name="MenuCenterContainer" type="CenterContainer" parent="." unique_id=946410179]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -86,11 +87,11 @@ offset_bottom = 4.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1160330525]
+[node name="VBoxContainer" type="VBoxContainer" parent="MenuCenterContainer" unique_id=1160330525]
 layout_mode = 2
 theme_override_constants/separation = 50
 
-[node name="PLAY_BUTTON" type="Button" parent="CenterContainer/VBoxContainer" unique_id=210897076]
+[node name="PLAY_BUTTON" type="Button" parent="MenuCenterContainer/VBoxContainer" unique_id=210897076]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(250, 70)
 layout_mode = 2
@@ -101,7 +102,7 @@ theme_override_styles/focus = SubResource("StyleBoxTexture_lpubu")
 text = "PLAY"
 script = ExtResource("3_brbbq")
 
-[node name="SETTINGS_BUTTON" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1159837222]
+[node name="SETTINGS_BUTTON" type="Button" parent="MenuCenterContainer/VBoxContainer" unique_id=1159837222]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(250, 70)
 layout_mode = 2
@@ -113,7 +114,7 @@ text = "SETTINGS
 "
 script = ExtResource("3_brbbq")
 
-[node name="QUIT_BUTTON" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1362551747]
+[node name="QUIT_BUTTON" type="Button" parent="MenuCenterContainer/VBoxContainer" unique_id=1362551747]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(250, 70)
 layout_mode = 2
@@ -124,47 +125,5 @@ theme_override_styles/focus = SubResource("StyleBoxTexture_hob4j")
 text = "QUIT"
 script = ExtResource("3_brbbq")
 
-[node name="SettingsPanelContainer" type="CenterContainer" parent="." unique_id=1987410498]
-layout_mode = 0
-offset_left = 83.0
-offset_top = 24.0
-offset_right = 506.0
-offset_bottom = 510.0
-mouse_filter = 2
-
-[node name="PanelContainer" type="PanelContainer" parent="SettingsPanelContainer" unique_id=2115536094]
-layout_mode = 2
-mouse_filter = 2
-
-[node name="Control" type="Control" parent="SettingsPanelContainer/PanelContainer" unique_id=670946677]
-layout_mode = 2
-
-[node name="Button" type="Button" parent="SettingsPanelContainer/PanelContainer/Control" unique_id=158643117]
-layout_mode = 0
-offset_left = -80.0
-offset_top = 91.0
-offset_right = 84.0
-offset_bottom = 142.0
-
-[node name="ColorRect" type="ColorRect" parent="SettingsPanelContainer/PanelContainer/Control" unique_id=637547841]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-color = Color(1, 0.9411765, 0.7372549, 1)
-
-[node name="MarginContainer" type="MarginContainer" parent="SettingsPanelContainer" unique_id=226652139]
-layout_mode = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="SettingsPanelContainer/MarginContainer" unique_id=196553793]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="SettingsPanelContainer/MarginContainer/VBoxContainer" unique_id=1700650045]
-layout_mode = 2
-
-[node name="_Spacer" type="Control" parent="SettingsPanelContainer/MarginContainer/VBoxContainer" unique_id=644555283]
-layout_mode = 2
-
-[node name="GridContainer" type="GridContainer" parent="SettingsPanelContainer/MarginContainer/VBoxContainer" unique_id=1296015154]
-layout_mode = 2
-
-[connection signal="pressed" from="CenterContainer/VBoxContainer/SETTINGS_BUTTON" to="SettingsPanelContainer" method="show"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=641276301]
+stream = ExtResource("5_tjwpk")
