@@ -65,6 +65,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_r67kn")
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1324973840]
 layout_mode = 1
@@ -80,10 +81,6 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -4.0
-offset_top = 4.0
-offset_right = -4.0
-offset_bottom = 4.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -93,9 +90,10 @@ theme_override_constants/separation = 50
 
 [node name="PLAY_BUTTON" type="Button" parent="MenuCenterContainer/VBoxContainer" unique_id=210897076]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(250, 70)
+custom_minimum_size = Vector2(450, 150)
 layout_mode = 2
 theme = ExtResource("2_brbbq")
+theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxTexture_01bab")
 theme_override_styles/hover = SubResource("StyleBoxTexture_tjwpk")
 theme_override_styles/focus = SubResource("StyleBoxTexture_lpubu")
@@ -104,9 +102,10 @@ script = ExtResource("3_brbbq")
 
 [node name="SETTINGS_BUTTON" type="Button" parent="MenuCenterContainer/VBoxContainer" unique_id=1159837222]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(250, 70)
+custom_minimum_size = Vector2(450, 150)
 layout_mode = 2
 theme = ExtResource("2_brbbq")
+theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxTexture_exs80")
 theme_override_styles/hover = SubResource("StyleBoxTexture_8n18e")
 theme_override_styles/focus = SubResource("StyleBoxTexture_lt2xq")
@@ -116,9 +115,10 @@ script = ExtResource("3_brbbq")
 
 [node name="QUIT_BUTTON" type="Button" parent="MenuCenterContainer/VBoxContainer" unique_id=1362551747]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(250, 70)
+custom_minimum_size = Vector2(450, 150)
 layout_mode = 2
 theme = ExtResource("2_brbbq")
+theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxTexture_kql7n")
 theme_override_styles/hover = SubResource("StyleBoxTexture_1p5nq")
 theme_override_styles/focus = SubResource("StyleBoxTexture_hob4j")
