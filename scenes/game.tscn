@@ -1,3 +1,8 @@
 [gd_scene format=3 uid="uid://d3to8h6kmbojk"]
 
+[ext_resource type="PackedScene" uid="uid://rs0ove3ikkla" path="res://scenes/wrigley.tscn" id="1_uwrxv"]
+
 [node name="Game" type="Node2D" unique_id=1449988419]
+position = Vector2(1000, 600)
+
+[node name="Wrigley" parent="." unique_id=728949061 instance=ExtResource("1_uwrxv")]
